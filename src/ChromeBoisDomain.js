@@ -26,9 +26,9 @@ export default class ChromeBoisDomain extends Component {
    */
 
   handleKeyDown = event => {
-    console.log(event.keyCode)
-    event.keyCode === 83 ? resize("-") : null
-    event.keyCode === 65 ? resize("+") : null
+    console.log(event.key)
+    event.key === "s" ? resize("-") : null
+    event.key === "a" ? resize("+") : null
   }
 
   render() {
